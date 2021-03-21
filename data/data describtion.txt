@@ -1,0 +1,3 @@
+data shape:150,5
+independent column:4
+target variable:Iris-Setosa=0, Iris-Versicolour=1, Iris-Virginica=2
