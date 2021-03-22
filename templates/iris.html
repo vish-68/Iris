@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Iris</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <style>
+        bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        body {
+            background-color: rgb(199,255,142);
+        }
+
+        #link:hover {
+            color: #14bf98;
+        }
+
+        #contact {
+            color: white;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #btn {
+            font-size: 20px;
+            border-color: black;
+        }
+
+        #btn:hover {
+            color: #14bf98;
+            background-color: rgb(0, 45, 66);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color:rgb(0,45,66);">
+        <div class="container-fluid">
+            <img src="/static/images/iris1.png" alt="Image" height=50px style="float: left; padding-left: 40px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#" id="link"> HOME </a>
+                    <a class="nav-link" href="#info" id="link"> INFO </a>
+                    <a class="nav-link" href="#btn" id="link"> PREDICT </a>
+                    <a class="nav-link" href="#contact" id="link"> CONTACT </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/images/iris-flower.jpg" class="d-block w-100" alt="Image">
+                <!----
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 style="color: black;">Lending Club-Loan Data</h3>
+                    <div class="container">
+                        <div class="d-grid gap-2">
+                            <a href="Individual.html" id="a1"> <button class="btn" id=btn1
+                                    type="button">Predict</button></a>
+                            <a href="Individual.html" id="a1"> <button class="btn" id=btn1
+                                    type="button">Visualize</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container">
+        <p style="font-size: 20px;text-align: justify;"><b>Iris</b> is a genus of 260–300 species of flowering plants
+            with showy flowers. It takes its name from the Greek
+            word
+            for a rainbow, which is also the name for the Greek goddess of the rainbow, Iris. Some authors state that
+            the
+            name refers to the wide variety of flower colors found among the many species. As well as being the
+            scientific name, iris is also widely used as a common name for all Iris species, as well as some belonging
+            to
+            other closely related genera. A common name for some species is 'Flags', while the plants of the subgenus
+            Scorpiris are widely known as 'Junos', particularly in horticulture. It is a popular garden flower.
+        </p>
+    </div>
+
+    <div id="info">
+        <br><br><br><br>
+        <div class="container">
+            <div class="container marketing">
+                <!-- Three columns of text below the carousel -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <center>
+                            <img src="/static/images/setosa.jpeg" height="150px">
+                            <br><br>
+                            <h2>Iris-Setosa</h2>
+                        </center>
+                        <ul style="text-align: center; list-style-type: none;">
+                            <li> Kingdom: Plantae</li>
+                            <li> Clade: Tracheophytes</li>
+                            <li> Clade: Angiosperms</li>
+                            <li> Clade: Monocots</li>
+                            <li> Order: Asparagales</li>
+                            <li> Family: Iridaceae</li>
+                            <li> Genus: Iris</li>
+                            <li> Subgenus: Iris subg. Limniris</li>
+                            <li> Section: Iris sect. Limniris</li>
+                            <li> Series: Iris ser. Tripetalae</li>
+                            <li> Species: I. setosa</li>
+                        </ul>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <center>
+                            <img src="/static/images/versicolor.jpg" height="150px">
+                            <br><br>
+                            <h2> Iris-Versicolour </h2>
+                        </center>
+                        <ul style="text-align: center; list-style-type: none;">
+                            <li> Kingdom: Plantae</li>
+                            <li> Clade: Tracheophytes</li>
+                            <li> Clade: Angiosperms</li>
+                            <li> Clade: Monocots</li>
+                            <li> Order: Asparagales</li>
+                            <li> Family: Iridaceae</li>
+                            <li> Genus: Iris</li>
+                            <li> Subgenus: Iris subg. Limniris</li>
+                            <li> Section: Iris sect. Limniris</li>
+                            <li> Series: Iris ser. Laevigatae</li>
+                            <li> Species: I. versicolor</li>
+                        </ul>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <center>
+                            <img src="/static/images/virginica.jpg" height="150px">
+                            <br><br>
+                            <h2> Iris-Virginica </h2>
+                        </center>
+                        <ul style="text-align: center; list-style-type: none;">
+                            <li>Kingdom: Plantae</li>
+                            <li>Clade: Tracheophytes</li>
+                            <li>Clade: Angiosperms</li>
+                            <li>Clade: Monocots</li>
+                            <li>Order: Asparagales</li>
+                            <li>Family: Iridaceae</li>
+                            <li>Genus: Iris</li>
+                            <li>Subgenus: Iris subg. Limniris</li>
+                            <li>Section: Iris sect. Limniris</li>
+                            <li>Series: Iris ser. Laevigatae</li>
+                            <li>Species: I. virginica</li>
+                        </ul>
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+            </div>
+        </div>
+        <br>
+        <br>
+        <form action="/Iris" method="POST">
+            <div style="background-color: rgb(0,45,66);">
+                <center>
+                    <h2 style="color: white;">Please Fill all Details !!</h2>
+                </center>
+            </div>
+            <br><br>
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInputGrid"
+                                placeholder="Enter Sepal Length" autocomplete="off" name="sepal_length" required>
+                            <label for="floatingInputGrid">Sepal Length:-</label>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInputGrid"
+                                placeholder="Enter Sepal Width" autocomplete="off" name="sepal_width" required>
+                            <label for="floatingInputGrid">Sepal Width:-</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInputGrid"
+                                placeholder="Enter Petal Length" autocomplete="off" name="petal_length" required>
+                            <label for="floatingInputGrid">Petal Length:-</label>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInputGrid"
+                                placeholder="Enter Petal Width" autocomplete="off" name="petal_width" required>
+                            <label for="floatingInputGrid">Petal Width:-</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-grid gap-2">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-grid gap-2">
+                            <input type="submit" value="Make Prediction" id="btn">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-grid gap-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <br>
+        <br>
+        <center>
+            <h2>
+                {{ prediction_text }}
+            </h2>
+        </center>
+        <br>
+        <br>
+        <div id="contact" style="background-color: rgb(0,45,66);">
+            <div class="container">
+                <div id="contact" class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="text-container about">
+                                    <br>
+                                    <h4>Developed by:</h4>
+                                    <h2 class="white">Vishal Upare</h2>
+                                    <p class="white">Bachelor of Computer Application Student at Tilat Maharashtra
+                                        Vidyapeeth.
+                                    </p>
+                                    <p class="white">Email: vishalupare68@gmail.com </p>
+                                </div> <!-- end of text-container -->
+                            </div> <!-- end of col -->
+                            <div class="col-md-2">
+                                <div class="text-container">
+                                    <br>
+                                    <h4>Connect</h4>
+                                    <ul class="list-unstyled li-space-lg white">
+                                        <li>
+                                            <a class="white" href="http://www.linkedin.com/in/vishal-upare-a8a092189/"
+                                                id="link">LinkedIn</a>
+                                        </li>
+                                        <li>
+                                            <a class="white" href="https://github.com/vish-68" id="link">Github</a>
+                                        </li>
+                                        <li>
+                                            <a class="white" href="https://www.kaggle.com/vishalupare"
+                                                id="link">Kaggle</a>
+                                        </li>
+                                    </ul>
+                                </div> <!-- end of text-container -->
+                            </div> <!-- end of col -->
+                            <div class="col-md-2">
+                                <div class="text-container">
+                                    <br>
+                                    <h4>Tools Used</h4>
+                                    <ul class="list-unstyled li-space-lg">
+                                        <li>
+                                            <a class="white"
+                                                href="https://public.tableau.com/profile/vishal2587#!/vizhome/LendingClubVisualization/Dashboard1"
+                                                id="link">
+                                                Tableau</a>
+                                        </li>
+                                        <li>
+                                            Jupyter Notebook
+                                        </li>
+                                    </ul>
+                                </div> <!-- end of text-container -->
+                            </div> <!-- end of col -->
+                        </div> <!-- end of row -->
+                    </div> <!-- end of container -->
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
